@@ -6,7 +6,7 @@ const server = http.createServer((req, res)=>{
   // res.end('<h1>Hello world</h1>');
   //console.log("hello")
   res.writeHead(500, {'Content-type': 'application/json'})
-  res.end(JSON.stringify({message:"Server Error"}))
+  res.end(JSON.stringify({message:"Servedasdar Error"}))
 })
 
 server.listen(PORT,()=>{
