@@ -15,8 +15,6 @@ const server = http.createServer((req, res)=>{
     res.end("<h1>not found</h1>")
   }
  
-  // res.writeHead(500, {'Content-type': 'application/json'})
-  // res.end(JSON.stringify({message:"Servedasdar Error"}))
 })
 
 server.listen(PORT,()=>{
