@@ -1,0 +1,27 @@
+import express from 'express'
+import path, {dirname} from 'path'
+import { fileURLToPath } from 'url'
+
+const app = express()
+const PORT = process.env.PORT || 5000
+
+// for getting URLPath
+const __filename = fileURLToPath(import.meta.url)
+// converting the URLPath to a directory for the joining of files
+const __dirname = dirname(__filename)
+
+//Middlewares
+//Middleware for public
+app.use(express.static(path.join(__dirname, "../public")))
+//middleware to handle JSON request
+app.use(express.json())
+
+app.get('/',(req, res)=>{
+  res.sendFile(path.join(__dirname, "public", "index.html"))
+})
+
+
+
+app.listen(PORT,(req, res)=>{
+  console.log(`${PORT} Running`)
+})
