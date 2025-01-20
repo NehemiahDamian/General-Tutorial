@@ -1,0 +1,10 @@
+# GET http://localhost:8383/api/data
+
+POST http://localhost:8383/api/data
+Content-Type: application/json
+
+[{
+  "name":"eat"
+}]
+
+
