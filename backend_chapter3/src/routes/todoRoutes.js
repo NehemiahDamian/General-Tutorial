@@ -1,24 +1,25 @@
 import express from "express"
 import db from "../db.js"
 
-const router = express.Router();
+const routers = express.Router();
+
 
 // naka log in na users
-router.get("/",(req,res)=>{
+routers.get("/",(req,res)=>{
 
 })
 
 // creating a new todo
-router.post("/",(req, res)=>{
+routers.post("/",(req, res)=>{
 
 })
 
-router.put("/:id",(req, res)=>{
+routers.put("/:id",(req, res)=>{
 
 })
 
-router.delete("/:id",(req,res)=>{
+routers.delete("/:id",(req,res)=>{
 
 })
 
-export default router;
+export default routers
