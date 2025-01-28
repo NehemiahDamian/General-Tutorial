@@ -13,3 +13,11 @@ Content-Type: application/json
 
 
 ###
+
+POST http://localhost:8383/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
